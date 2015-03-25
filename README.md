@@ -52,9 +52,10 @@ KodiCMS основана на базе [Kohana framework](http://kohanaframework
 
 ## Установка
 
-1. Создайте клон репозитория `https://github.com/butschster/kodicms.git` или 
-[скачайте zip архив](https://github.com/butschster/kodicms/zipball/master)
-с последней версией.
+1. Скачайте файлы KodiCMS:
+	- GitHub: `https://github.com/KodiCMS/kodicms.git`
+	- Composer: `composer create-project kodicms/cms . --prefer-dist`
+	- ZIP: [https://github.com/KodiCMS/kodicms/archive/master.zip](https://github.com/KodiCMS/kodicms/archive/master.zip)
 
 2. Разместите файлы на вашем web-сервере.
 
@@ -65,14 +66,12 @@ KodiCMS основана на базе [Kohana framework](http://kohanaframework
 
 3. Перед установкой необходимо удалить, либо очистить содержимое файла config.php, если он имеется в корне сайта.
 	Также необходимо установить права на запись и чтение для следующих папок:
-	* `cms/logs`
-	* `cms/cache`
-	* `cms/tmp`
+	* `cms/storage/`
 	* `layouts`
 	* `snippets`
 	* `public`
 
-	Через консоль можно сделать с помощью команды `chmod -R a+rwx ...`, например `chmod -R a+rwx cms/cache`
+	Через консоль можно сделать с помощью команды `chmod -R a+rwx ...`, например `chmod -R a+rwx cms/storage`
 
 4. Откройте главную страницу через браузер. Запустится процесс интсалляции системы.
 
@@ -103,9 +102,9 @@ KodiCMS основана на базе [Kohana framework](http://kohanaframework
 
 2. Перейти в корень папки **kodicms**
 
-3. выполнить команду `php index.php --task=install`. 
+3. выполнить команду `php minion --task=install`. 
 
-> Полный набор параметров можно посмотреть через **help** `php index.php --task=install --help`
+> Полный набор параметров можно посмотреть через **help** `php minion --task=install --help`
 
 
 ### Пример конфигурации для Nginx
