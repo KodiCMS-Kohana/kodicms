@@ -5,10 +5,6 @@
 /vendor
 /node_modules
 
-# Public files
-/public/*
-!/public/*.html
-
 # Patches
 /patches/*
 
