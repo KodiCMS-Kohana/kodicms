@@ -1,0 +1,42 @@
+{
+	"name"				: "kodicms/cms",
+	"description"		: "The KodiCMS CMS on Kohana framework.",
+	"keywords"			: ["framework", "kohana", "cms", "kodicms"],
+	"type"				: "project",
+	"homepage"			: "https://github.com/butschster/kodicms",
+	"authors": [
+		{
+			"name"		: "Kohana",
+			"homepage"	: "http://kohanaframework.com",
+			"role"		: "Developer"
+		},
+		{
+			"name"		: "Pavel Buchnev",
+			"email"		: "butschster@gmail.com",
+			"role"		: "Project maintainer"
+		}
+	],
+	"scripts": {
+		"post-install-cmd": [
+			"php minion cache:clear"
+		],
+		"post-update-cmd": [
+			"php minion cache:clear"
+		]
+	},
+	"minimum-stability"		: "dev",
+	"require": {
+		"php"				: ">=5.4.0",
+		"kodicms/core"		: "dev-master"
+	},
+	"config": {
+		"vendor-dir"		: "vendor"
+	},
+	"extra": {
+        "installer-paths" : {
+			"cms/modules/{$name}"				: ["type:kodicms-module"],
+			"cms/plugins/{$name}"				: ["type:kodicms-plugin"],
+			"vendor/{$vendor}/modules/{$name}"	: ["type:kohana-module"]
+		}
+	}
+}

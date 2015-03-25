@@ -1,0 +1,34 @@
+# Config
+/config.php
+
+# Composer
+/vendor
+/node_modules
+
+# Public files
+/public/*
+!/public/*.html
+
+# Patches
+/patches/*
+
+.DS_Store
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# PhpStorm
+.idea
+
+# NetBeans
+nbproject
+
+# SublimeText project files
+/*.sublime-project
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
