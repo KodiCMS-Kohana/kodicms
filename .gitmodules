@@ -1,0 +1,57 @@
+[submodule "vendor/kodicms/users"]
+	path = vendor/kodicms/users
+	url = https://github.com/KodiCMS/module-users
+[submodule "vendor/kodicms/pages"]
+	path = vendor/kodicms/pages
+	url = https://github.com/KodiCMS/module-pages
+[submodule "vendor/kodicms/logs"]
+	path = vendor/kodicms/logs
+	url = https://github.com/KodiCMS/module-logs
+[submodule "vendor/kodicms/installer"]
+	path = vendor/kodicms/installer
+	url = https://github.com/KodiCMS/module-installer
+[submodule "vendor/kodicms/dashboard"]
+	path = vendor/kodicms/dashboard
+	url = https://github.com/KodiCMS/module-dashboard
+[submodule "vendor/kodicms/update"]
+	path = vendor/kodicms/update
+	url = https://github.com/KodiCMS/module-update
+[submodule "vendor/kodicms/snippet"]
+	path = vendor/kodicms/snippet
+	url = https://github.com/KodiCMS/module-snippet
+[submodule "vendor/kodicms/core"]
+	path = vendor/kodicms/core
+	url = https://github.com/KodiCMS/core
+[submodule "vendor/kodicms/widget"]
+	path = vendor/kodicms/widget
+	url = https://github.com/KodiCMS/module-widget
+[submodule "vendor/kodicms/api"]
+	path = vendor/kodicms/api
+	url = https://github.com/KodiCMS/module-api
+[submodule "vendor/kodicms/plugins"]
+	path = vendor/kodicms/plugins
+	url = https://github.com/KodiCMS/module-plugins
+[submodule "vendor/kodicms/page_parts"]
+	path = vendor/kodicms/page_parts
+	url = https://github.com/KodiCMS/module-page_parts
+[submodule "vendor/kodicms/search"]
+	path = vendor/kodicms/search
+	url = https://github.com/KodiCMS/module-search
+[submodule "vendor/kodicms/tags"]
+	path = vendor/kodicms/tags
+	url = https://github.com/KodiCMS/module-tags
+[submodule "vendor/kodicms/breadcrumbs"]
+	path = vendor/kodicms/breadcrumbs
+	url = https://github.com/KodiCMS/module-breadcrumbs
+[submodule "vendor/kodicms/scheduler"]
+	path = vendor/kodicms/scheduler
+	url = https://github.com/KodiCMS/module-scheduler
+[submodule "vendor/kodicms/datasource"]
+	path = vendor/kodicms/datasource
+	url = https://github.com/KodiCMS/module-datasource
+[submodule "vendor/kodicms/email"]
+	path = vendor/kodicms/email
+	url = https://github.com/KodiCMS/module-email
+[submodule "vendor/kodicms/elfinder"]
+	path = vendor/kodicms/elfinder
+	url = https://github.com/KodiCMS/module-elfinder
