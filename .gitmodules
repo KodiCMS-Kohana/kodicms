@@ -55,3 +55,33 @@
 [submodule "vendor/kodicms/elfinder"]
 	path = vendor/kodicms/elfinder
 	url = https://github.com/KodiCMS/module-elfinder
+[submodule "cms/plugins/page_fields"]
+	path = cms/plugins/page_fields
+	url = https://github.com/KodiCMS/plugin-page_fields
+[submodule "cms/plugins/archive"]
+	path = cms/plugins/archive
+	url = https://github.com/KodiCMS/plugin-archive
+[submodule "cms/plugins/backup"]
+	path = cms/plugins/backup
+	url = https://github.com/KodiCMS/plugin-backup
+[submodule "cms/plugins/messages"]
+	path = cms/plugins/messages
+	url = https://github.com/KodiCMS/plugin-messages
+[submodule "cms/plugins/page_not_found"]
+	path = cms/plugins/page_not_found
+	url = https://github.com/KodiCMS/plugin-page_not_found
+[submodule "cms/plugins/maintenace"]
+	path = cms/plugins/maintenace
+	url = https://github.com/KodiCMS/plugin-maintenace
+[submodule "vendor/kodicms/hybrid"]
+	path = vendor/kodicms/hybrid
+	url = https://github.com/KodiCMS/module-hybrid
+[submodule "cms/plugins/redactor"]
+	path = cms/plugins/redactor
+	url = https://github.com/KodiCMS/plugin-redactor
+[submodule "cms/plugins/part_revision"]
+	path = cms/plugins/part_revision
+	url = https://github.com/KodiCMS/plugin-part-revision
+[submodule "cms/plugins/userguide"]
+	path = cms/plugins/userguide
+	url = https://github.com/KodiCMS/plugin-userguide

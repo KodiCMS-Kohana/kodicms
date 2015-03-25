@@ -69,6 +69,7 @@ Kohana::modules( array(
 	'breadcrumbs'	=> CMS_MODPATH . 'breadcrumbs',
 	'plugins'		=> CMS_MODPATH . 'plugins',
 	'datasource'	=> CMS_MODPATH . 'datasource',
+	'hybrid'		=> CMS_MODPATH . 'hybrid',
 	'search'		=> CMS_MODPATH . 'search',
 	'update'		=> CMS_MODPATH . 'update',
 	'dashboard'		=> CMS_MODPATH . 'dashboard'
