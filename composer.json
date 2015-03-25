@@ -30,11 +30,11 @@
 		"kodicms/core"		: "dev-master"
 	},
 	"config": {
-		"vendor-dir"		: "vendor"
+		"vendor-dir"		: "vendor",
+		"preferred-install"	: "dist"
 	},
 	"extra": {
         "installer-paths" : {
-			"cms/modules/{$name}"				: ["type:kodicms-module"],
 			"cms/plugins/{$name}"				: ["type:kodicms-plugin"],
 			"vendor/{$vendor}/modules/{$name}"	: ["type:kohana-module"]
 		}
