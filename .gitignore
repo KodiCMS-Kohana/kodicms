@@ -3,10 +3,6 @@
 
 # Composer
 /vendor
-/node_modules
-
-# Patches
-/patches/*
 
 .DS_Store
 
@@ -15,10 +11,10 @@
 .Trashes
 
 # PhpStorm
-.idea
+/.idea
 
 # NetBeans
-nbproject
+/nbproject
 
 # SublimeText project files
 /*.sublime-project

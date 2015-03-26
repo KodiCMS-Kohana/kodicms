@@ -38,7 +38,7 @@ setlocale(LC_ALL, 'ru_RU.utf-8');
  * @link http://kohanaframework.org/guide/using.autoloading
  * @link http://www.php.net/manual/function.spl-autoload-register
  */
-spl_autoload_register(array('Kohana', 'auto_load'));
+spl_autoload_register(['Kohana', 'auto_load']);
 
 /**
  * Optionally, you can enable a compatibility auto-loader for use with
@@ -134,14 +134,14 @@ define('STORAGEPATH',		CMSPATH . 'storage' . DIRECTORY_SEPARATOR);
  * - boolean  profile     enable or disable internal profiling               TRUE
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
-Kohana::init( array(
+Kohana::init([
 	'base_url'				=> '/',
 	'index_file'			=> FALSE,
 	'cache_dir'				=> STORAGEPATH . 'cache',
 	'caching'				=> Kohana::$environment < Kohana::DEVELOPMENT,
 	'profile'				=> Kohana::$environment > Kohana::PRODUCTION,
 	'errors'				=> TRUE
-));
+]);
 
 if (PHP_SAPI != 'cli')
 {
@@ -167,22 +167,22 @@ Kohana::$log->attach(new Log_File(STORAGEPATH . 'logs'));
  */
 Kohana::$config->attach(new Config_File);
 
-Route::set('error', 'system/error(/<code>(/<message>))', array(
+Route::set('error', 'system/error(/<code>(/<message>))', [
 	'message' => '.*',
 	'code' => '[0-9]+'
-))
-->defaults(array(
+])
+->defaults([
 	'directory' => 'system',
 	'controller' => 'error',
 	'action' => 'index'
-));
+]);
 
-Route::set('admin_media', 'cms/media/<file>.<ext>', array(
+Route::set('admin_media', 'cms/media/<file>.<ext>', [
 	'file' => '.*',
 	'ext' => 'css|js|png|jpg|gif|otf|eot|svg|ttf|woff'
-))
-->defaults(array(
+])
+->defaults([
 	'directory' => 'system',
 	'controller' => 'media',
 	'action' => 'media',
-));
+]);

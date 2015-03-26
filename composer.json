@@ -19,17 +19,14 @@
 	"scripts": {
 		"post-install-cmd": [
 			"php minion vendor:publish",
-			"php minion git:submodules",
 			"php minion cache:clear"
 		],
 		"post-update-cmd": [
 			"php minion vendor:publish",
-			"php minion git:submodules",
 			"php minion cache:clear"
 		],
 		"post-create-project-cmd": [
-			"php minion vendor:publish",
-			"php minion git:submodules"
+			"php minion vendor:publish"
 		]
 	},
 	"minimum-stability"		: "dev",

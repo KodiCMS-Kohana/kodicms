@@ -45,86 +45,61 @@ Session::$default = SESSION_TYPE;
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
-Kohana::modules( array(
-	'core'			=> CMS_MODPATH . 'core',
-	'users'			=> CMS_MODPATH . 'users',
-	'logs'			=> CMS_MODPATH . 'logs',
-	
-	'auth'			=> MODPATH . 'auth',	// Basic authentication
-	'orm'			=> MODPATH . 'orm',			// Object Relationship Mapping
-	'minion'		=> MODPATH . 'minion',		// Minion
-	'cache'			=> MODPATH . 'cache',		// Cache manager
-	'database'		=> MODPATH . 'database',	// Database access
-	'image'			=> MODPATH . 'image',
+Kohana::modules(Kohana::$config->load('app.modules'));
 
-	'email'			=> CMS_MODPATH . 'email',
-	'scheduler'		=> CMS_MODPATH . 'scheduler',
-	'snippet'		=> CMS_MODPATH . 'snippet',
-	'pages'			=> CMS_MODPATH . 'pages',		// Pages
-	'page_parts'	=> CMS_MODPATH . 'page_parts',	// Page parts
-	'tags'			=> CMS_MODPATH . 'tags',		// Tags
-	'widget'		=> CMS_MODPATH . 'widget',
-	'elfinder'		=> CMS_MODPATH . 'elfinder',
-	'api'			=> CMS_MODPATH . 'api',
-	'breadcrumbs'	=> CMS_MODPATH . 'breadcrumbs',
-	'plugins'		=> CMS_MODPATH . 'plugins',
-	'datasource'	=> CMS_MODPATH . 'datasource',
-	'hybrid'		=> CMS_MODPATH . 'hybrid',
-	'search'		=> CMS_MODPATH . 'search',
-	'update'		=> CMS_MODPATH . 'update',
-	'dashboard'		=> CMS_MODPATH . 'dashboard'
-) );
-
+/**
+ * Attach a database reader and writer to config.
+ */
 Kohana::$config->attach(new Config_Database);
 
 Observer::notify('modules::after_load');
 
-Route::set('user', ADMIN_DIR_NAME . '/<action>(?next=<next_url>)', array(
+Route::set('user', ADMIN_DIR_NAME . '/<action>(?next=<next_url>)', [
 	'action' => '(login|logout|forgot)',
-))
-->defaults(array(
+])
+->defaults([
 	'controller' => 'login',
-));
+]);
 
-Route::set('templates', ADMIN_DIR_NAME . '/(<controller>(/<action>(/<id>)))', array(
+Route::set('templates', ADMIN_DIR_NAME . '/(<controller>(/<action>(/<id>)))', [
 	'controller' => '(layout|snippet)',
 	'id' => '.*'
-))
-->defaults(array(
+])
+->defaults([
 	'controller' => 'index',
 	'action' => 'index',
-));
+]);
 
-Route::set('downloader', '(' . ADMIN_DIR_NAME . '/)download/<path>', array(
+Route::set('downloader', '(' . ADMIN_DIR_NAME . '/)download/<path>', [
 	'path' => '.*'
-))
-->defaults(array(
+])
+->defaults([
 	'directory' => 'system',
 	'controller' => 'download',
 	'action' => 'index',
-));
+]);
 
 Route::set('backend', ADMIN_DIR_NAME . '(/<controller>(/<action>(/<id>)))')
-->defaults(array(
+->defaults([
 	'controller' => 'dashboard',
 	'action' => 'index',
-));
+]);
 
-Route::set('system', '<directory>-<controller>-<action>(/<id>)', array(
+Route::set('system', '<directory>-<controller>-<action>(/<id>)', [
 	'directory' => '(ajax|action|form)',
 	'controller' => '[A-Za-z\_]+',
 	'action' => '[A-Za-z\_]+',
 	'id' => '.+',
-));
+]);
 
-Route::set('default', '(<page>)(<suffix>)', array(
+Route::set('default', '(<page>)(<suffix>)', [
 	'page' => '.*',
 	'suffix' => URL_SUFFIX
-))
-->defaults(array(
+])
+->defaults([
 	'controller' => 'front',
 	'action' => 'index',
 	'suffix' => URL_SUFFIX
-));
+]);
 
 Observer::notify('system::init');
