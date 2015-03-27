@@ -53,7 +53,7 @@ KodiCMS основана на базе [Kohana framework](http://kohanaframework
 ## Установка
 
 1. Скачайте файлы KodiCMS:
-	- GitHub: `https://github.com/KodiCMS/kodicms.git`
+	- GitHub: `git clone --recursive https://github.com/KodiCMS/kodicms.git`
 	- Composer: `composer create-project kodicms/cms . --prefer-dist`
 	- ZIP: [https://github.com/KodiCMS/kodicms/archive/master.zip](https://github.com/KodiCMS/kodicms/archive/master.zip)
 
