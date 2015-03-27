@@ -1,0 +1,7 @@
+{
+	"private": true,
+	"devDependencies": {
+		"gulp": "^3.8.8",
+		"kodicms-gulp": "git+https://github.com:KodiCMS/module-gulp.git"
+	}
+}

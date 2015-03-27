@@ -1,6 +1,9 @@
 # Config
 /config.php
 
+# NodeJs
+/node_modules
+
 # Composer
 /vendor
 
