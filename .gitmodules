@@ -85,3 +85,21 @@
 [submodule "cms/plugins/userguide"]
 	path = cms/plugins/userguide
 	url = https://github.com/KodiCMS/plugin-userguide
+[submodule "vendor/kodicms/kohana-cache"]
+	path = vendor/kodicms/kohana-cache
+	url = https://github.com/KodiCMS/kohana-cache
+[submodule "vendor/kodicms/kohana-minion"]
+	path = vendor/kodicms/kohana-minion
+	url = https://github.com/KodiCMS/kohana-minion
+[submodule "vendor/kodicms/kohana-auth"]
+	path = vendor/kodicms/kohana-auth
+	url = https://github.com/KodiCMS/kohana-auth
+[submodule "vendor/kodicms/kohana-orm"]
+	path = vendor/kodicms/kohana-orm
+	url = https://github.com/KodiCMS/kohana-orm
+[submodule "vendor/kodicms/kohana-image"]
+	path = vendor/kodicms/kohana-image
+	url = https://github.com/KodiCMS/kohana-image
+[submodule "vendor/kodicms/kohana-db"]
+	path = vendor/kodicms/kohana-db
+	url = https://github.com/KodiCMS/kohana-db

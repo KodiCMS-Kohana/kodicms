@@ -26,8 +26,15 @@
 	},
 	"minimum-stability"		: "dev",
 	"require": {
-		"php"				: ">=5.4.0",
-		"kodicms/core"		: "dev-psr_4"
+		"php"					: ">=5.4.0",
+		"kodicms/core"			: "dev-psr_4",
+		"KodiCMS/core54"		: "dev-3.3/psr_4",
+		"KodiCMS/kohana-minion"	: "dev-3.3/psr_4",
+		"KodiCMS/kohana-auth"	: "dev-3.3/psr_4",
+		"KodiCMS/kohana-orm"	: "dev-3.3/psr_4",
+		"KodiCMS/kohana-image"	: "dev-3.3/psr_4",
+		"KodiCMS/kohana-db"		: "dev-3.3/psr_4",
+		"KodiCMS/kohana-cache"	: "dev-3.3/psr_4"
 	},
 	"config": {
 		"vendor-dir"		: "vendor",
@@ -43,5 +50,133 @@
 		"psr-4": {
 			"App\\": 				"cms\\application\\classes"
 		}
-	}
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"type": "project",
+				"name": "KodiCMS/core54",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/core54.git",
+					"type": "git",
+					"reference": "psr-4/develop"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Core\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-minion",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-minion.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Minion\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-auth",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-auth.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Auth\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-orm",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-orm.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\ORM\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-image",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-image.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Image\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-db",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-db.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Database\\": "classes"
+					}
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"type": "kohana-module",
+				"name": "KodiCMS/kohana-cache",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/KodiCMS/kohana-cache.git",
+					"type": "git",
+					"reference": "3.3/psr_4"
+				},
+				"autoload": {
+					"psr-4": {
+						"Kohana\\Cache\\": "classes"
+					}
+				}
+			}
+		}
+	]
 }
