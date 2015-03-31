@@ -1,20 +1,26 @@
-<?php defined('SYSPATH') or die('No direct access allowed.');
+<?php
+
+/**
+ * Composer auto-loader
+ */
+if (file_exists(DOCROOT . 'vendor' . DIRECTORY_SEPARATOR . 'autoload' . EXT))
+{
+	require DOCROOT . 'vendor' . DIRECTORY_SEPARATOR . 'autoload' . EXT;
+}
 
 // -- Environment setup --------------------------------------------------------
+$app = new \KodiCMS\Core\Core;
 
-// Load the core Kohana class
-require SYSPATH . 'classes/Kohana/Core' . EXT;
+/**
+ * Attach a file reader to config. Multiple readers are supported.
+ */
+$app->registerService(new \Kohana\Core\Config\ConfigServiceProvider);
+$app->registerService(new \Kohana\Core\Log\LogServiceProvider);
 
-if (is_file(APPPATH . 'classes/Kohana' . EXT))
-{
-	// Application extends the core
-	require APPPATH . 'classes/Kohana' . EXT;
-}
-else
-{
-	// Load empty core extension
-	require SYSPATH . 'classes/Kohana' . EXT;
-}
+/**
+ * Load class aliases
+ */
+\KodiCMS\Core\AliasLoader::getInstance($app->resolve('config')->load('app.aliases'))->register();
 
 /**
 * Set the default time zone.
@@ -47,14 +53,6 @@ spl_autoload_register(['Kohana', 'auto_load']);
  * It is recommended to not enable this unless absolutely necessary.
  */
 //spl_autoload_register(array('Kohana', 'auto_load_lowercase'));
-
-/**
- * Composer auto-loader
- */
-if (file_exists(DOCROOT . 'vendor' . DIRECTORY_SEPARATOR . 'autoload' . EXT))
-{
-	require DOCROOT . 'vendor' . DIRECTORY_SEPARATOR . 'autoload' . EXT;
-}
 
 /**
  * Enable the Kohana auto-loader for unserialization.
@@ -96,6 +94,11 @@ else if (IS_INSTALLED)
  */
 I18n::lang('en_US');
 
+/**
+ * alias __() in global namespace.  This is needed primarily for Views and other includes.
+ */
+require APPPATH . 'functions.php';
+
 if (isset($_SERVER['SERVER_PROTOCOL']))
 {
 	// Replace the default protocol.
@@ -134,7 +137,7 @@ define('STORAGEPATH',		CMSPATH . 'storage' . DIRECTORY_SEPARATOR);
  * - boolean  profile     enable or disable internal profiling               TRUE
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
-Kohana::init([
+$app->init([
 	'base_url'				=> '/',
 	'index_file'			=> FALSE,
 	'cache_dir'				=> STORAGEPATH . 'cache',
@@ -145,7 +148,7 @@ Kohana::init([
 
 if (PHP_SAPI != 'cli')
 {
-	define('BASE_URL',		URL::base(Request::$type));
+	define('BASE_URL', URL::base(Request::$type));
 }
 
 define('SITE_HOST',	Request::$host);
@@ -157,32 +160,6 @@ if (!defined('BASE_URL'))
 
 define('ADMIN_RESOURCES',	BASE_URL . 'cms/media/');
 
-/**
- * Attach the file write to logging. Multiple writers are supported.
- */
-Kohana::$log->attach(new Log_File(STORAGEPATH . 'logs'));
+require APPPATH . DIRECTORY_SEPARATOR . 'http' . DIRECTORY_SEPARATOR . 'system_routes.php';
 
-/**
- * Attach a file reader to config. Multiple readers are supported.
- */
-Kohana::$config->attach(new Config_File);
-
-Route::set('error', 'system/error(/<code>(/<message>))', [
-	'message' => '.*',
-	'code' => '[0-9]+'
-])
-->defaults([
-	'directory' => 'system',
-	'controller' => 'error',
-	'action' => 'index'
-]);
-
-Route::set('admin_media', 'cms/media/<file>.<ext>', [
-	'file' => '.*',
-	'ext' => 'css|js|png|jpg|gif|otf|eot|svg|ttf|woff'
-])
-->defaults([
-	'directory' => 'system',
-	'controller' => 'media',
-	'action' => 'media',
-]);
+return $app;

@@ -42,7 +42,7 @@ $cms_modules = 'vendor/kodicms';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = 'vendor/kohana/core';
+$system = 'vendor/kohana54/core';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -99,7 +99,7 @@ define('APPPATH', realpath($application) . DIRECTORY_SEPARATOR);
 define('MODPATH', realpath($modules) . DIRECTORY_SEPARATOR);
 define('CMS_MODPATH', realpath($cms_modules) . DIRECTORY_SEPARATOR);
 define('SYSPATH', realpath($system) . DIRECTORY_SEPARATOR);
-define('CFGFATH', DOCROOT . 'config' . EXT);
+define('CONFIG_FILE', DOCROOT . 'config' . EXT);
 
 // Clean up the configuration vars
 unset($application, $modules, $system, $cms);
@@ -122,10 +122,10 @@ if (!defined('KOHANA_START_MEMORY'))
 
 // Check is installed CMS
 $is_installed = FALSE;
-if (file_exists(CFGFATH))
+if (file_exists(CONFIG_FILE))
 {
 	$is_installed = TRUE;
-	include CFGFATH;
+	include CONFIG_FILE;
 
 	if (!defined('ADMIN_DIR_NAME'))
 	{

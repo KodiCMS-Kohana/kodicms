@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cc8e03fab60c319f310026a3e42b4381",
+    "hash": "e2b1276c7c8f55895a40cc40fc02de73",
     "packages": [
         {
             "name": "composer/installers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15"
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/4db8898759143c742a8661b626d23f1535a42c15",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15",
+                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
                 "shasum": ""
             },
             "replace": {
@@ -99,93 +99,32 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-03-18 21:44:04"
+            "time": "2015-03-26 16:11:30"
         },
         {
-            "name": "doctrine/lexer",
-            "version": "dev-master",
+            "name": "fuelphp/dependency",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/lexer.git",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+                "url": "https://github.com/fuelphp/dependency.git",
+                "reference": "994ebdd0c41e499dbfa6bca45d46e0eb1d04c9ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "url": "https://api.github.com/repos/fuelphp/dependency/zipball/994ebdd0c41e499dbfa6bca45d46e0eb1d04c9ec",
+                "reference": "994ebdd0c41e499dbfa6bca45d46e0eb1d04c9ec",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "lexer",
-                "parser"
-            ],
-            "time": "2014-09-09 13:34:57"
-        },
-        {
-            "name": "egulias/email-validator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "0a26375a7a1b25567604d666e1f13123ce636542"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0a26375a7a1b25567604d666e1f13123ce636542",
-                "reference": "0a26375a7a1b25567604d666e1f13123ce636542",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "~1.0,>=1.0.1",
-                "php": ">= 5.3.3"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.4",
-                "satooshi/php-coveralls": "dev-master"
+                "codeception/codeception": "~2.0.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
             "autoload": {
-                "psr-0": {
-                    "Egulias\\": "src/"
+                "psr-4": {
+                    "Fuel\\Dependency\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -194,17 +133,18 @@
             ],
             "authors": [
                 {
-                    "name": "Eduardo Gulias Davis"
+                    "name": "FuelPHP Development Team",
+                    "email": "team@fuelphp.com"
                 }
             ],
-            "description": "A library for validating emails",
-            "homepage": "https://github.com/egulias/EmailValidator",
+            "description": "FuelPHP Dependency handling",
+            "homepage": "https://github.com/fuelphp/dependency",
             "keywords": [
-                "email",
-                "validation",
-                "validator"
+                "dependencies",
+                "dependency",
+                "injection"
             ],
-            "time": "2015-03-08 00:24:16"
+            "time": "2015-01-01 15:42:38"
         },
         {
             "name": "kodicms/api",
@@ -212,25 +152,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-api.git",
-                "reference": "ae83f22ea73addda25b6af1682f29b0f2df91619"
+                "reference": "b7e53f17563d5f10fb502fc9b1630e7232954168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-api/zipball/ae83f22ea73addda25b6af1682f29b0f2df91619",
-                "reference": "ae83f22ea73addda25b6af1682f29b0f2df91619",
+                "url": "https://api.github.com/repos/KodiCMS/module-api/zipball/b7e53f17563d5f10fb502fc9b1630e7232954168",
+                "reference": "b7e53f17563d5f10fb502fc9b1630e7232954168",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -253,7 +186,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:49:55"
+            "time": "2015-03-25 21:19:57"
         },
         {
             "name": "kodicms/breadcrumbs",
@@ -261,25 +194,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-breadcrumbs.git",
-                "reference": "7eee1b5cf1bce8a8c8c9f08075f34b4fe91bb0eb"
+                "reference": "8d37a245e397e6f6b5410039a1135fd453cc13e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-breadcrumbs/zipball/7eee1b5cf1bce8a8c8c9f08075f34b4fe91bb0eb",
-                "reference": "7eee1b5cf1bce8a8c8c9f08075f34b4fe91bb0eb",
+                "url": "https://api.github.com/repos/KodiCMS/module-breadcrumbs/zipball/8d37a245e397e6f6b5410039a1135fd453cc13e8",
+                "reference": "8d37a245e397e6f6b5410039a1135fd453cc13e8",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -302,7 +228,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:50:54"
+            "time": "2015-03-25 21:17:52"
         },
         {
             "name": "kodicms/core",
@@ -310,12 +236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/core.git",
-                "reference": "9a1cc4a30e1102786005ac65e489de65de9ac66f"
+                "reference": "22cb6294c7e810605732c7c46e0867dcb436f6da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/core/zipball/9a1cc4a30e1102786005ac65e489de65de9ac66f",
-                "reference": "9a1cc4a30e1102786005ac65e489de65de9ac66f",
+                "url": "https://api.github.com/repos/KodiCMS/core/zipball/22cb6294c7e810605732c7c46e0867dcb436f6da",
+                "reference": "22cb6294c7e810605732c7c46e0867dcb436f6da",
                 "shasum": ""
             },
             "require": {
@@ -325,6 +251,7 @@
                 "kodicms/datasource": "@dev",
                 "kodicms/elfinder": "@dev",
                 "kodicms/email": "@dev",
+                "kodicms/hybrid": "@dev",
                 "kodicms/installer": "@dev",
                 "kodicms/logs": "@dev",
                 "kodicms/page_parts": "@dev",
@@ -336,7 +263,7 @@
                 "kodicms/tags": "@dev",
                 "kodicms/update": "@dev",
                 "kodicms/users": "@dev",
-                "kodicms/widgets": "@dev",
+                "kodicms/widget": "@dev",
                 "kohana/auth": "3.3.*",
                 "kohana/cache": "3.3.*",
                 "kohana/core": "3.3.*",
@@ -347,13 +274,6 @@
                 "php": ">=5.3.3"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -376,7 +296,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:49:43"
+            "time": "2015-03-26 11:27:12"
         },
         {
             "name": "kodicms/dashboard",
@@ -384,25 +304,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-dashboard.git",
-                "reference": "0f64c66679055dd0525ca1e0977b7c2926c47212"
+                "reference": "6a531f431ba7e5ba95095ca0edc8c8692872b179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-dashboard/zipball/0f64c66679055dd0525ca1e0977b7c2926c47212",
-                "reference": "0f64c66679055dd0525ca1e0977b7c2926c47212",
+                "url": "https://api.github.com/repos/KodiCMS/module-dashboard/zipball/6a531f431ba7e5ba95095ca0edc8c8692872b179",
+                "reference": "6a531f431ba7e5ba95095ca0edc8c8692872b179",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -425,7 +338,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:49:23"
+            "time": "2015-03-25 21:19:22"
         },
         {
             "name": "kodicms/datasource",
@@ -433,12 +346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-datasource.git",
-                "reference": "84d834ec4985945d989a7410937c4b961d9802c8"
+                "reference": "3b017dc34e6293b6945681e95a7fb6e2cff11a02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-datasource/zipball/84d834ec4985945d989a7410937c4b961d9802c8",
-                "reference": "84d834ec4985945d989a7410937c4b961d9802c8",
+                "url": "https://api.github.com/repos/KodiCMS/module-datasource/zipball/3b017dc34e6293b6945681e95a7fb6e2cff11a02",
+                "reference": "3b017dc34e6293b6945681e95a7fb6e2cff11a02",
                 "shasum": ""
             },
             "require": {
@@ -446,13 +359,6 @@
                 "kodicms/search": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -475,7 +381,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:51:06"
+            "time": "2015-03-25 21:21:03"
         },
         {
             "name": "kodicms/elfinder",
@@ -483,25 +389,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-elfinder.git",
-                "reference": "432cf783bcdb48abad7217856c85368a175b8e1d"
+                "reference": "f8fbfef445f33c85e1bdffb524213a027f26340a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-elfinder/zipball/432cf783bcdb48abad7217856c85368a175b8e1d",
-                "reference": "432cf783bcdb48abad7217856c85368a175b8e1d",
+                "url": "https://api.github.com/repos/KodiCMS/module-elfinder/zipball/f8fbfef445f33c85e1bdffb524213a027f26340a",
+                "reference": "f8fbfef445f33c85e1bdffb524213a027f26340a",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -524,7 +423,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:51:19"
+            "time": "2015-03-25 21:21:25"
         },
         {
             "name": "kodicms/email",
@@ -532,26 +431,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-email.git",
-                "reference": "53cede2b0e3b5fe7a9427d4a8a0845a7a62b4820"
+                "reference": "8623de9e1a688009edda710e2cb3e10f0f996390"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-email/zipball/53cede2b0e3b5fe7a9427d4a8a0845a7a62b4820",
-                "reference": "53cede2b0e3b5fe7a9427d4a8a0845a7a62b4820",
+                "url": "https://api.github.com/repos/KodiCMS/module-email/zipball/8623de9e1a688009edda710e2cb3e10f0f996390",
+                "reference": "8623de9e1a688009edda710e2cb3e10f0f996390",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master",
-                "swiftmailer/swiftmailer": "@stable"
+                "swiftmailer/swiftmailer": "~5.0"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -574,7 +466,51 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:51:12"
+            "time": "2015-03-25 22:22:57"
+        },
+        {
+            "name": "kodicms/hybrid",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KodiCMS/module-hybrid.git",
+                "reference": "67207cf6795ba13b3ec2749db81d9ba60248ecbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KodiCMS/module-hybrid/zipball/67207cf6795ba13b3ec2749db81d9ba60248ecbc",
+                "reference": "67207cf6795ba13b3ec2749db81d9ba60248ecbc",
+                "shasum": ""
+            },
+            "require": {
+                "kodicms/core": "dev-master",
+                "kodicms/datasource": "dev-master"
+            },
+            "type": "kodicms-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com",
+                    "homepage": "http://www.kodicms.ru/",
+                    "role": "developer"
+                }
+            ],
+            "description": "The official KodiCMS installer module",
+            "homepage": "http://www.kodicms.ru/",
+            "keywords": [
+                "cms",
+                "datasource",
+                "framework",
+                "hybrid",
+                "kodicms",
+                "kohana",
+                "module"
+            ],
+            "time": "2015-03-25 22:24:25"
         },
         {
             "name": "kodicms/installer",
@@ -582,25 +518,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-installer.git",
-                "reference": "f765200257477c35715f13824b34c2766b911892"
+                "reference": "8e19d8562cf53cbd453124d0e47e7173a55afe1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-installer/zipball/f765200257477c35715f13824b34c2766b911892",
-                "reference": "f765200257477c35715f13824b34c2766b911892",
+                "url": "https://api.github.com/repos/KodiCMS/module-installer/zipball/8e19d8562cf53cbd453124d0e47e7173a55afe1f",
+                "reference": "8e19d8562cf53cbd453124d0e47e7173a55afe1f",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -623,7 +552,7 @@
                 "kohana",
                 "module"
             ],
-            "time": "2015-03-25 14:49:19"
+            "time": "2015-03-26 11:18:57"
         },
         {
             "name": "kodicms/logs",
@@ -631,25 +560,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-logs.git",
-                "reference": "2cc83f27aa3ffe38eeedeedeb089dffda928c874"
+                "reference": "f8506feadcc3a357e0a5447e7280c22f7b0df784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-logs/zipball/2cc83f27aa3ffe38eeedeedeb089dffda928c874",
-                "reference": "2cc83f27aa3ffe38eeedeedeb089dffda928c874",
+                "url": "https://api.github.com/repos/KodiCMS/module-logs/zipball/f8506feadcc3a357e0a5447e7280c22f7b0df784",
+                "reference": "f8506feadcc3a357e0a5447e7280c22f7b0df784",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -672,7 +594,7 @@
                 "logs",
                 "module"
             ],
-            "time": "2015-03-25 14:49:14"
+            "time": "2015-03-25 21:23:09"
         },
         {
             "name": "kodicms/page_parts",
@@ -680,12 +602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-page_parts.git",
-                "reference": "f15ef00883b5d29a49eff0574563a86ce37b1c95"
+                "reference": "f8392e679d736463d8aa18b4d2f7938b7dfe15a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-page_parts/zipball/f15ef00883b5d29a49eff0574563a86ce37b1c95",
-                "reference": "f15ef00883b5d29a49eff0574563a86ce37b1c95",
+                "url": "https://api.github.com/repos/KodiCMS/module-page_parts/zipball/f8392e679d736463d8aa18b4d2f7938b7dfe15a7",
+                "reference": "f8392e679d736463d8aa18b4d2f7938b7dfe15a7",
                 "shasum": ""
             },
             "require": {
@@ -693,13 +615,6 @@
                 "kodicms/pages": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -722,7 +637,7 @@
                 "module",
                 "page_parts"
             ],
-            "time": "2015-03-25 14:50:36"
+            "time": "2015-03-25 21:23:42"
         },
         {
             "name": "kodicms/pages",
@@ -730,25 +645,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-pages.git",
-                "reference": "1131e503002858aa2c5ecf87740ff18985da4932"
+                "reference": "3bca0243f8a654c53193346913bd325b83948a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-pages/zipball/1131e503002858aa2c5ecf87740ff18985da4932",
-                "reference": "1131e503002858aa2c5ecf87740ff18985da4932",
+                "url": "https://api.github.com/repos/KodiCMS/module-pages/zipball/3bca0243f8a654c53193346913bd325b83948a55",
+                "reference": "3bca0243f8a654c53193346913bd325b83948a55",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -771,7 +679,7 @@
                 "module",
                 "pages"
             ],
-            "time": "2015-03-25 14:49:08"
+            "time": "2015-03-25 21:24:21"
         },
         {
             "name": "kodicms/plugins",
@@ -779,25 +687,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-plugins.git",
-                "reference": "21084d16211630436470a1c2107e7b7bd7861aa1"
+                "reference": "f06788dfa5a9e8ab0aa89c7b6f2fb82ec086b5ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-plugins/zipball/21084d16211630436470a1c2107e7b7bd7861aa1",
-                "reference": "21084d16211630436470a1c2107e7b7bd7861aa1",
+                "url": "https://api.github.com/repos/KodiCMS/module-plugins/zipball/f06788dfa5a9e8ab0aa89c7b6f2fb82ec086b5ae",
+                "reference": "f06788dfa5a9e8ab0aa89c7b6f2fb82ec086b5ae",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -820,7 +721,7 @@
                 "module",
                 "plugins"
             ],
-            "time": "2015-03-25 14:50:30"
+            "time": "2015-03-25 21:24:44"
         },
         {
             "name": "kodicms/scheduler",
@@ -828,25 +729,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-scheduler.git",
-                "reference": "5965889fc1e0f76f3a9a064d7bd5984b045ad324"
+                "reference": "f8bbe3cd5bdf9aab3c97c2c047f60b196b658894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-scheduler/zipball/5965889fc1e0f76f3a9a064d7bd5984b045ad324",
-                "reference": "5965889fc1e0f76f3a9a064d7bd5984b045ad324",
+                "url": "https://api.github.com/repos/KodiCMS/module-scheduler/zipball/f8bbe3cd5bdf9aab3c97c2c047f60b196b658894",
+                "reference": "f8bbe3cd5bdf9aab3c97c2c047f60b196b658894",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -869,7 +763,7 @@
                 "module",
                 "scheduler"
             ],
-            "time": "2015-03-25 14:51:00"
+            "time": "2015-03-25 21:25:03"
         },
         {
             "name": "kodicms/search",
@@ -877,25 +771,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-search.git",
-                "reference": "f4c3893abbfb813c88f07c02451bed482cd7b630"
+                "reference": "a36fc5048d4d8f9c19adc0b777f40b4a6711f03a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-search/zipball/f4c3893abbfb813c88f07c02451bed482cd7b630",
-                "reference": "f4c3893abbfb813c88f07c02451bed482cd7b630",
+                "url": "https://api.github.com/repos/KodiCMS/module-search/zipball/a36fc5048d4d8f9c19adc0b777f40b4a6711f03a",
+                "reference": "a36fc5048d4d8f9c19adc0b777f40b4a6711f03a",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -918,7 +805,7 @@
                 "module",
                 "search"
             ],
-            "time": "2015-03-25 14:50:41"
+            "time": "2015-03-25 21:25:26"
         },
         {
             "name": "kodicms/snippet",
@@ -926,25 +813,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-snippet.git",
-                "reference": "1da5a2cd73409b8008b71b89d3fddde0043887eb"
+                "reference": "2d2d71fff05dd85f26959e54ca3994115191e10e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-snippet/zipball/1da5a2cd73409b8008b71b89d3fddde0043887eb",
-                "reference": "1da5a2cd73409b8008b71b89d3fddde0043887eb",
+                "url": "https://api.github.com/repos/KodiCMS/module-snippet/zipball/2d2d71fff05dd85f26959e54ca3994115191e10e",
+                "reference": "2d2d71fff05dd85f26959e54ca3994115191e10e",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -967,7 +847,7 @@
                 "module",
                 "snippet"
             ],
-            "time": "2015-03-25 14:49:36"
+            "time": "2015-03-25 21:27:25"
         },
         {
             "name": "kodicms/tags",
@@ -975,12 +855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-tags.git",
-                "reference": "20f9ba3961da6464fc3863900617c424c1a616ef"
+                "reference": "81b749887839b3e43c98c48cea3f5e921aa0d077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-tags/zipball/20f9ba3961da6464fc3863900617c424c1a616ef",
-                "reference": "20f9ba3961da6464fc3863900617c424c1a616ef",
+                "url": "https://api.github.com/repos/KodiCMS/module-tags/zipball/81b749887839b3e43c98c48cea3f5e921aa0d077",
+                "reference": "81b749887839b3e43c98c48cea3f5e921aa0d077",
                 "shasum": ""
             },
             "require": {
@@ -988,13 +868,6 @@
                 "kodicms/pages": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -1017,7 +890,7 @@
                 "module",
                 "tags"
             ],
-            "time": "2015-03-25 14:50:49"
+            "time": "2015-03-25 21:27:44"
         },
         {
             "name": "kodicms/update",
@@ -1025,25 +898,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-update.git",
-                "reference": "4815eb6767742fd8cab3836bdc1338bb1c92c083"
+                "reference": "9016014682ad653eba70c4a32904f2bfc7a41acc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-update/zipball/4815eb6767742fd8cab3836bdc1338bb1c92c083",
-                "reference": "4815eb6767742fd8cab3836bdc1338bb1c92c083",
+                "url": "https://api.github.com/repos/KodiCMS/module-update/zipball/9016014682ad653eba70c4a32904f2bfc7a41acc",
+                "reference": "9016014682ad653eba70c4a32904f2bfc7a41acc",
                 "shasum": ""
             },
             "require": {
                 "kodicms/core": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -1066,7 +932,7 @@
                 "module",
                 "update"
             ],
-            "time": "2015-03-25 14:49:28"
+            "time": "2015-03-26 00:02:06"
         },
         {
             "name": "kodicms/users",
@@ -1111,17 +977,17 @@
             "time": "2015-03-25 14:12:38"
         },
         {
-            "name": "kodicms/widgets",
+            "name": "kodicms/widget",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KodiCMS/module-widget.git",
-                "reference": "d95b1f413ab7d515254d84897d1206c6d7b44745"
+                "reference": "d3b931d98ede9001384fd1f288e1036430f0e750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KodiCMS/module-widget/zipball/d95b1f413ab7d515254d84897d1206c6d7b44745",
-                "reference": "d95b1f413ab7d515254d84897d1206c6d7b44745",
+                "url": "https://api.github.com/repos/KodiCMS/module-widget/zipball/d3b931d98ede9001384fd1f288e1036430f0e750",
+                "reference": "d3b931d98ede9001384fd1f288e1036430f0e750",
                 "shasum": ""
             },
             "require": {
@@ -1129,13 +995,6 @@
                 "kodicms/snippet": "dev-master"
             },
             "type": "kodicms-module",
-            "extra": {
-                "installer-paths": {
-                    "cms/modules/{$name}": [
-                        "type:kodicms-module"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -1156,9 +1015,9 @@
                 "kodicms",
                 "kohana",
                 "module",
-                "widgets"
+                "widget"
             ],
-            "time": "2015-03-25 14:49:50"
+            "time": "2015-03-25 21:20:08"
         },
         {
             "name": "kohana/auth",
@@ -1571,22 +1430,37 @@
             "time": "2014-10-10 14:38:27"
         },
         {
-            "name": "swiftmailer/swiftmailer",
+            "name": "kohana54/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
+                "url": "https://github.com/kohana54/core.git",
+                "reference": "psr-4/develop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kohana\\Core\\": "classes"
+                }
+            },
+            "time": "2015-01-22 01:10:18"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "28f3b68e1b8b614006b9d6b573936d2eaba400d6"
+                "reference": "048be6f7c19944d604e321347990543bc2bbe10b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/28f3b68e1b8b614006b9d6b573936d2eaba400d6",
-                "reference": "28f3b68e1b8b614006b9d6b573936d2eaba400d6",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/048be6f7c19944d604e321347990543bc2bbe10b",
+                "reference": "048be6f7c19944d604e321347990543bc2bbe10b",
                 "shasum": ""
             },
             "require": {
-                "egulias/email-validator": "~1.2",
-                "php": ">=5.5.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1"
@@ -1594,7 +1468,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
@@ -1621,14 +1495,15 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-03-23 09:58:58"
+            "time": "2015-03-14 06:07:26"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kodicms/core": 20
+        "kodicms/core": 20,
+        "kohana54/core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
