@@ -27,9 +27,7 @@
 	"minimum-stability"		: "dev",
 	"require": {
 		"php"				: ">=5.4.0",
-		"kodicms/core"		: "dev-master",
-		"kohana54/core"		: "dev-master",
-		"fuelphp/dependency": "2.0.0"
+		"kodicms/core"		: "dev-psr_4"
 	},
 	"config": {
 		"vendor-dir"		: "vendor",
@@ -43,43 +41,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"App\\": 				"cms\\application\\classes",
-			"KodiCMS\\Core\\": 		"vendor\\kodicms\\core\\classes",
-			"KodiCMS\\Users\\": 	"vendor\\kodicms\\users\\classes",
-			"KodiCMS\\API\\": 		"vendor\\kodicms\\api\\classes",
-			"KodiCMS\\Dashboard\\": "vendor\\kodicms\\dashboard\\classes",
-			"KodiCMS\\Datasource\\":"vendor\\kodicms\\datasource\\classes",
-			"KodiCMS\\Email\\": 	"vendor\\kodicms\\email\\classes",
-			"KodiCMS\\Hybrid\\": 	"vendor\\kodicms\\hybrid\\classes",
-			"KodiCMS\\Installer\\": "vendor\\kodicms\\installer\\classes",
-			"KodiCMS\\Logs\\": 		"vendor\\kodicms\\logs\\classes",
-			"KodiCMS\\Plugins\\": 	"vendor\\kodicms\\plugins\\classes",
-			"KodiCMS\\Search\\": 	"vendor\\kodicms\\search\\classes",
-			"KodiCMS\\Snippet\\": 	"vendor\\kodicms\\snippet\\classes",
-			"KodiCMS\\Tags\\": 		"vendor\\kodicms\\tags\\classes",
-			"KodiCMS\\Update\\": 	"vendor\\kodicms\\update\\classes",
-			"KodiCMS\\Widget\\": 	"vendor\\kodicms\\widget\\classes",
-			"KodiCMS\\Pages\\": 	"vendor\\kodicms\\pages\\classes",
-			"KodiCMS\\PageParts\\": "vendor\\kodicms\\page_parts\\classes"
+			"App\\": 				"cms\\application\\classes"
 		}
-	},
-	"repositories": [
-		{
-			"type": "package",
-			"package": {
-				"name": "kohana54/core",
-				"version": "dev-master",
-				"source": {
-					"url": "https://github.com/kohana54/core.git",
-					"type": "git",
-					"reference": "psr-4/develop"
-				},
-				"autoload": {
-					"psr-4": {
-						"Kohana\\Core\\": "classes"
-					}
-				}
-			}
-		}
-	]
+	}
 }
