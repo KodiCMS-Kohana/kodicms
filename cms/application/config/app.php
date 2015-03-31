@@ -44,12 +44,12 @@ return [
 		'dashboard'		=> CMS_MODPATH . 'dashboard',
 
 		// Kohana
-		'auth'			=> MODPATH . 'auth',		// Basic authentication
-		'orm'			=> MODPATH . 'orm',			// Object Relationship Mapping
-		'minion'		=> MODPATH . 'minion',		// Minion
-		'cache'			=> MODPATH . 'cache',		// Cache manager
-		'database'		=> MODPATH . 'database',	// Database access
-		'image'			=> MODPATH . 'image',
+		'auth'			=> MODPATH . 'kohana-auth',		// Basic authentication
+		'orm'			=> MODPATH . 'kohana-orm',			// Object Relationship Mapping
+		'minion'		=> MODPATH . 'kohana-minion',		// Minion
+		'cache'			=> MODPATH . 'kohana-cache',		// Cache manager
+		'database'		=> MODPATH . 'kohana-db',	// Database access
+		'image'			=> MODPATH . 'kohana-image',
 	],
 
 	'aliases' => [

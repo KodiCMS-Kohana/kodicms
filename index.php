@@ -29,12 +29,12 @@ $application = $cms . 'application';
  *
  * @see  http://kohanaframework.org/guide/about.install#modules
  */
-$modules = 'vendor/kohana/modules';
+$modules = 'vendor' . DIRECTORY_SEPARATOR . 'kodicms';
 
 /**
  * The directory in which your modules are located.
  */
-$cms_modules = 'vendor/kodicms';
+$cms_modules = 'vendor' . DIRECTORY_SEPARATOR . 'kodicms';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -42,7 +42,7 @@ $cms_modules = 'vendor/kodicms';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = 'vendor/kohana54/core';
+$system = 'vendor' . DIRECTORY_SEPARATOR . 'kodicms' . DIRECTORY_SEPARATOR . 'core54';
 
 /**
  * The default extension of resource files. If you change this, all resources
