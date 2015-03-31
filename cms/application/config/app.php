@@ -22,10 +22,17 @@ return [
 	|
 	*/
 	'modules' => [
-		// KodiCMS
 		'core'			=> CMS_MODPATH . 'core',
 		'users'			=> CMS_MODPATH . 'users',
 		'logs'			=> CMS_MODPATH . 'logs',
+
+		'auth'			=> MODPATH . 'auth',	// Basic authentication
+		'orm'			=> MODPATH . 'orm',			// Object Relationship Mapping
+		'minion'		=> MODPATH . 'minion',		// Minion
+		'cache'			=> MODPATH . 'cache',		// Cache manager
+		'database'		=> MODPATH . 'database',	// Database access
+		'image'			=> MODPATH . 'image',
+
 		'email'			=> CMS_MODPATH . 'email',
 		'scheduler'		=> CMS_MODPATH . 'scheduler',
 		'snippet'		=> CMS_MODPATH . 'snippet',
@@ -41,70 +48,6 @@ return [
 		'hybrid'		=> CMS_MODPATH . 'hybrid',
 		'search'		=> CMS_MODPATH . 'search',
 		'update'		=> CMS_MODPATH . 'update',
-		'dashboard'		=> CMS_MODPATH . 'dashboard',
-
-		// Kohana
-		'auth'			=> MODPATH . 'auth',		// Basic authentication
-		'orm'			=> MODPATH . 'orm',			// Object Relationship Mapping
-		'minion'		=> MODPATH . 'minion',		// Minion
-		'cache'			=> MODPATH . 'cache',		// Cache manager
-		'database'		=> MODPATH . 'database',	// Database access
-		'image'			=> MODPATH . 'image',
-	],
-
-	'aliases' => [
-		// KodiCMS classes
-		'Assets'			=> '\KodiCMS\Core\Assets\Core',
-		'Request' 			=> '\KodiCMS\Core\Request',
-		'Kohana' 			=> '\KodiCMS\Core\Core',
-		'I18n' 				=> '\KodiCMS\Core\I18n',
-		'URL' 				=> '\KodiCMS\Core\URL',
-		'Config' 			=> '\KodiCMS\Core\Config',
-		'Cache' 			=> '\KodiCMS\Core\Cache',
-		'ORM' 				=> '\KodiCMS\Core\ORM',
-		'View' 				=> '\KodiCMS\Core\View',
-		'Form' 				=> '\KodiCMS\Core\Form',
-		'HTML' 				=> '\KodiCMS\Core\HTML',
-		'Text' 				=> '\KodiCMS\Core\Text',
-		'Upload' 			=> '\KodiCMS\Core\Upload',
-		'Validation'		=> '\KodiCMS\Core\Validation',
-		'WYSIWYG' 			=> '\KodiCMS\Core\WYSIWYG',
-		'Context' 			=> '\KodiCMS\Core\Context',
-		'UI'				=> '\KodiCMS\Core\UI',
-		'HTTP_Exception' 	=> '\KodiCMS\Core\HTTP\Exception',
-
-		// Users
-		'Auth'				=> '\KodiCMS\Users\Auth',
-		'ACL'				=> '\KodiCMS\Users\ACL',
-
-		// Kohana classes
-		'Arr' 				=> '\Kohana\Core\Arr',
-//		'Config' 			=> '\Kohana\Core\Config',
-		'Cookie' 			=> '\Kohana\Core\Cookie',
-		'Date' 				=> '\Kohana\Core\Date',
-		'Debug' 			=> '\Kohana\Core\Debug',
-		'Encrypt'			=> '\Kohana\Core\Encrypt',
-		'File' 				=> '\Kohana\Core\File',
-//		'Form' 				=> '\Kohana\Core\Form',
-//		'HTML' 				=> '\Kohana\Core\HTML',
-		'HTTP' 				=> '\Kohana\Core\HTTP',
-//		'I18n' 				=> '\Kohana\Core\I18n',
-		'Inflector' 		=> '\Kohana\Core\Inflector',
-		'Model' 			=> '\Kohana\Core\Model',
-		'Num' 				=> '\Kohana\Core\Num',
-		'Profiler' 			=> '\Kohana\Core\Profiler',
-//		'Request' 			=> '\Kohana\Core\Request',
-		'Response' 			=> '\Kohana\Core\Response',
-		'Route'				=> '\Kohana\Core\Route',
-		'Security' 			=> '\Kohana\Core\Security',
-		'Session' 			=> '\Kohana\Core\Session',
-//		'Text' 				=> '\Kohana\Core\Text',
-//		'Upload' 			=> '\Kohana\Core\Upload',
-//		'URL' 				=> '\Kohana\Core\URL',
-		'UTF8' 				=> '\Kohana\Core\UTF8',
-		'Valid' 			=> '\Kohana\Core\Valid',
-//		'Validation'		=> '\Kohana\Core\Validation',
-		'View' 				=> '\Kohana\Core\View',
-		'Kohana_Exception' 	=> '\KodiCMS\Core\Exception',
+		'dashboard'		=> CMS_MODPATH . 'dashboard'
 	]
 ];
