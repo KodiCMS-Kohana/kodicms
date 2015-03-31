@@ -57,7 +57,7 @@
 			"package": {
 				"type": "project",
 				"name": "KodiCMS/core54",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/core54.git",
 					"type": "git",
@@ -75,7 +75,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-minion",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-minion.git",
 					"type": "git",
@@ -93,7 +93,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-auth",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-auth.git",
 					"type": "git",
@@ -111,7 +111,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-orm",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-orm.git",
 					"type": "git",
@@ -129,7 +129,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-image",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-image.git",
 					"type": "git",
@@ -147,7 +147,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-db",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-db.git",
 					"type": "git",
@@ -165,7 +165,7 @@
 			"package": {
 				"type": "kohana-module",
 				"name": "KodiCMS/kohana-cache",
-				"version": "dev-master",
+				"version": "dev-3.3/psr_4",
 				"source": {
 					"url": "https://github.com/KodiCMS/kohana-cache.git",
 					"type": "git",

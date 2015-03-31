@@ -103,3 +103,6 @@
 [submodule "vendor/kodicms/kohana-db"]
 	path = vendor/kodicms/kohana-db
 	url = https://github.com/KodiCMS/kohana-db
+[submodule "vendor/kodicms/core54"]
+	path = vendor/kodicms/core54
+	url = https://github.com/KodiCMS/core54
